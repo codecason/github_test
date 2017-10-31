@@ -11,26 +11,26 @@
 #### 2. **合作者@huangmxsysu**, 但是做了前端的模板后跑路了, 包括数据采集、处理、最后的高德API、分词、前端页面都没做, 最后只能靠自己一个人单挑
 
 ### 项目结构
- 
-│-app 
-│  │-data_          // stop_words.txt 
-│  │-migrations 
-│  │ 
-│  │-se             // 后端数据处理,包含高德API,地理信息索引 
-│  │  └─config 
-│  │-templates      // 网页模板，包含高德API的js代码,用于地图标注和显示 
-│ 
-│-sousuo            // django项目配置及路由设置 
-│   
-│-static 
-    │-css 
-    │  └─font-awesome-4.7.0 
-    │      │-css 
-    │      │-fonts 
-    │      │-less 
-    │      └─scss 
-    │-images 
-    └─scss 
+  
+│-app  
+│  │-data_          // stop_words.txt  
+│  │-migrations  
+│  │  
+│  │-se             // 后端数据处理,包含高德API,地理信息索引  
+│  │  └─config  
+│  │-templates      // 网页模板，包含高德API的js代码,用于地图标注和显示  
+│  
+│-sousuo            // django项目配置及路由设置  
+│    
+│-static  
+    │-css  
+    │  └─font-awesome-4.7.0  
+    │      │-css  
+    │      │-fonts  
+    │      │-less  
+    │      └─scss  
+    │-images  
+    └─scss  
 
 ### 数据处理
 原始字段 => 根据addr调用API => 得到经纬度信息 => 添加到原数据的后面作为新字段 => 根据经纬度生成geohash 编码的数据
